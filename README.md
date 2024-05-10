@@ -6,3 +6,8 @@ npx sequelize-cli model:generate --name Books --attributes title:string,descript
 npx sequelize-cli db:migrate
 
 npm run start
+
+
+docker build -t express-api .
+
+docker-compose up

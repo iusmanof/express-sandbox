@@ -17,6 +17,10 @@ router.post("/book/create", (req, res) => {
 });
 
 // get our all books from the database
+router.get("/", (req, res) => {
+ res.json("test")
+});
+
 router.get("/book", (req, res) => {
   models.Books.findAll()
     .then((books) => {

@@ -1,0 +1,10 @@
+# GET http://localhost:13000
+
+
+POST http://localhost:13000/book/create
+
+{
+    "title": "Book 1",
+    "description": "JS",
+    "published": "true"
+}

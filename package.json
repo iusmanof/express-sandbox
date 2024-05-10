@@ -15,7 +15,7 @@
     "sequelize-cli": "^6.6.2"
   },
   "scripts": {
-    "start": "nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
