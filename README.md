@@ -1,13 +1,6 @@
 # express-sandbox
+https://blog.francescociulla.com/javascript-crud-rest-api-using-nodejs-express-sequelize-postgres-docker-and-docker-compose\
 
-npm i   or   npm install --save-dev sequelize-cli pg express
-
-npx sequelize-cli model:generate --name Books --attributes title:string,description:string,published:boolean
-npx sequelize-cli db:migrate
-
-npm run start
-
-
-docker build -t express-api .
+npm i
 
 docker-compose up

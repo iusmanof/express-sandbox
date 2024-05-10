@@ -1,13 +1,15 @@
-FROM node:16
+FROM node:14
 
-WORKDIR /usr/src/app
+# Create app directory
+WORKDIR /app
 
 COPY package*.json ./
 
 RUN npm install
 
+# Bundle app source
 COPY . .
 
-EXPOSE 1337
+EXPOSE 3000
 
-CMD ["npm", "run", "dev"]
+CMD [ "node", "index.js" ]
