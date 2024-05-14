@@ -1,12 +1,11 @@
-# GET http://localhost:8080
+GET http://localhost:5000
 
+# POST http://localhost:8080/users HTTP/1.1
+# content-type: application/json
 
-POST http://localhost:8080/users HTTP/1.1
-content-type: application/json
-
-{
-    "name": "alice",
-    "email": "alice@mail.ru"
-}
+# {
+#     "name": "alice",
+#     "email": "alice@mail.ru"
+# }
 
 # GET http://localhost:3000/users/2
