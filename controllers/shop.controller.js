@@ -27,7 +27,7 @@ const shopController = {
   },
   create: async (req, res) => {
     try {
-      const { name, price } = req.body;
+      const { name, street } = req.body;
 
       const sql = "INSERT INTO shop(name, street) VALUES($1, $2) RETURNING *";
 
@@ -40,12 +40,12 @@ const shopController = {
   },
   updateById: async (req, res) => {
     try {
-      const { name, price } = req.body;
+      const { name, street } = req.body;
 
       const sql =
         "UPDATE shop set name = $1, street = $2 where shop_id = $3 RETURNING *";
 
-      const { rows } = await postgresql.query(sql, [name, price, req.params.id]);
+      const { rows } = await postgresql.query(sql, [name, street, req.params.id]);
 
       res.json({ msg: "OK", data: rows[0] });
     } catch (error) {
