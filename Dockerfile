@@ -7,6 +7,8 @@ COPY package*.json ./
 
 RUN npm install
 
+ENV PORT=8080
+
 # Bundle app source
 COPY . .
 

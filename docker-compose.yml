@@ -6,7 +6,7 @@ services:
     build: .
     image: node_app_image
     ports:
-      - "8080:8080"
+      - 8080:8080
     environment:
       - PG_DB=node_app_image
       - PG_USER=user
@@ -19,7 +19,7 @@ services:
     container_name: node_db
     image: postgres:12
     ports:
-      - "5432:5432"
+      - 5432:5432
     environment:
       - POSTGRES_DB=node_app_image
       - POSTGRES_USER=user
